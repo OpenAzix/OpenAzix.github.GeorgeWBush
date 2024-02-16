@@ -1,0 +1,68 @@
+body {  
+    width: 90%;  
+    margin-left: 30px;  
+    font-family:Georgia, 'Times New Roman', Times, serif;   
+    color: #ffffff;  
+    font-size: 0.9em;   
+    line-height: 2;  
+    background-image: url(./imagenes/fons2.png);
+    background-repeat: repeat-y;  
+    background-position: center;
+    background-image: url(./imagenes/tux.png);
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background: linear-gradient(to bottom, #3498db, #6bb9e5);
+}
+h1 {  
+    color: #ffffff;  
+    line-height: 2;  
+    padding-left: 5px;  
+    border-bottom: 2px solid #ffff00;
+    background-color: #c50000;
+}  
+h2 {  
+    background: url(./imagenes/trebol.png) no-repeat 0% 50%;
+    padding-left: 5%;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    }
+p {  
+        margin-top: 50px;  
+        padding: 30px 60px;  
+        background: #000000;  
+        background-image: url(imagenes/tux.png);  
+        background-repeat: no-repeat;             
+}  
+#navegacio {  
+    border-bottom: 1px solid #788;  
+    padding: 3px 0; /* identic al padding del element 'a' */  
+    text-align: center;
+}  
+  
+#navegacio li {  
+    list-style-type: none;  
+    display: inline;  
+}  
+  
+#navegacio li a {  
+    text-decoration: none;  
+    color: #3c3c3c;  
+    padding: 3px 0.5em;  
+    margin-left: 3px;  
+    border: 1px solid #778;  
+    border-bottom: none;  
+    background: #ffffff;  
+}  
+  
+#navegacio li a:visited { color: #667; }  
+#navegacio li a:hover {  
+    color: #000;  
+    background: #3f65ce;  
+    border-color: #2334ed;  
+}  
+  
+#navegacio li a#actiu {  
+background-color: #fff;  
+border-bottom: 1px solid #fff;  
+}  
+

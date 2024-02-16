@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="header">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="web2.html">WEB 2.0</a></li>
+    </ul>
+
+    <h1>Formulario</h1>
+    <section>
+        <h2>Nombre:</h2>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+    </section>
+    <section>
+        <h2>Tus Apellidos</h2>
+        <form>
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Esborrar">
+        </form>
+    </section>
+    <section>
+        <h2>Fecha</h2>
+        <label for="fecha">Selecciona una fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+    </section>
+
+    <section>
+        <h2>Escoge tu presidente favorito de USA:</h2>
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">GEORGE WALKER BUSH</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">BARACK OBAMA</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">DONALD J.TRUMP</label>
+        </form>
+    </section>
+
+
+    <section>
+        <h2>Color</h2>
+        <label for="color">Escoge un color:</label>
+        <input type="color" id="color"><br><br> 
+    </section>
+
+    <section>
+        <h2>SECCION 2</h2>
+        <p>Escoge lo que quieras:</p>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Yo tengo una pc gaming</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Yo tengo un disco duro</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Yo tengo casa propia</label>
+        </form>
+    </section>
+
+    <section>
+        <h2>Contraseña</h2>
+        <form>
+            <label for="contrasena">Introduce la Contraseña:</label>
+            <input type="password" id="contrasena"><br><br>
+        </form>
+
+    </section>
+    <section>
+        <h2>Archivos</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="archivo">Selecciona un archivo:</label>
+            <input type="file" id="archivo" name="archivo" accept=".pdf, .doc, .docx"> 
+            <input type="submit" value="Subir Archivo">
+        </form>
+    </section>
+    <section>
+        <h2>Rango</h2>
+        <form action="/procesar" method="post">
+            <label for="nivel">Selecciona un nivel de Rango:</label>
+            <input type="range" id="nivel" name="nivel" min="0" max="100" step="1" value="50" oninput="updateValue(this.value)">
+            <output for="nivel" id="valor-nivel"></output>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <section>
+        <h2>Numero Télefono</h2>
+        <form>
+            <label for="telefono">Tu Numero de Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej +34 000 000 000" required>
+        </form>
+    </section>
+
+    <section>
+        <h2>Nombre del Presidente</h2>
+        <div class="seccion1">
+            <label for="george_walker_bush">Nombre del presidente:</label>
+            <input type="text" id="george_walker_bush" name="presidente">
+        </div>
+    </section>
+
+    <section>
+        <h2>Imagen 1</h2>
+        <a href="https://es.wikipedia.org/wiki/Archivo:George-W-Bush.jpeg">
+            <img id="enlace-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/220px-George-W-Bush.jpeg" alt="Descripción de la Imagen" width="157" height="208">
+        </a>
+    </section>
+
+    <section>
+        <h2>Hora</h2>
+        <form action="/procesar" method="post">
+            <label for="hora">Seleccione la hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Ciclos</h2>
+        <form action="/procesar" method="post">
+            <label for="ciclo">Seleccione el ciclo:</label>
+            <select id="ciclo" name="ciclo" required>
+                <option value="" disabled selected>Selecciona un ciclo</option>       
+                <option value="asix">ASIX</option>
+                <option value="dam">DAM</option>
+                <option value="daw">DAW</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Búsqueda</h2>
+        <form action="https://www.bing.com/search" method="get">
+            <label for="busqueda">Buscar:</label>
+            <input type="text" id="busqueda" name="q" placeholder="Escribir" required>
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Buscar Nombre</h2>
+        <form>
+            <label for="busqueda">Buscar</label>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Buscar en la web</h2>
+        <form action="https://www.bing.com/search" method="get">
+            <!-- Contenido del formulario aquí -->
+            <label for="busqueda">Buscar:</label>
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Otro</h2>
+        <form>
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+</body>
+</html>
